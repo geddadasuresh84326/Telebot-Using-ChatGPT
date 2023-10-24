@@ -28,6 +28,12 @@ async def send_welcome(message: types.Message):
     """
     await message.reply("Hi!\nI'm EchoBot!\nPowered by aiogram.I am you bot how can help you")
 
+@dp.message_handler(commands=['who created you'])
+async def send_welcome2(message: types.Message):
+    """
+    This handler will be called when user sends `/who created you` command
+    """
+    await message.reply("My creator name is suresh")
 
 
 @dp.message_handler()
