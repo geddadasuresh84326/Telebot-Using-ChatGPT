@@ -8,6 +8,7 @@ import logging
 from aiogram import Bot, Dispatcher, executor, types
 from dotenv import load_dotenv
 import os
+
 load_dotenv()
 
 API_TOKEN = os.getenv("TOKEN")
@@ -25,7 +26,7 @@ async def send_welcome(message: types.Message):
     """
     This handler will be called when user sends `/start` or `/help` command
     """
-    await message.reply("Hi!\nI'm EchoBot!\nPowered by aiogram.")
+    await message.reply("Hi!\nI'm EchoBot!\nPowered by aiogram.I am you bot how can help you")
 
 
 
